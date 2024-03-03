@@ -24,6 +24,8 @@ if btn:
     query = f"Напиши у меня лишний вес или недостаток веса при весе {weight} кг и при росте {height} см {gender} {age} лет"
 
     r1 = load_data(query)
-    r1 = load_data(r1 + ", питание и план тренировок")
     if r1:
         st.write(r1)
+    r2 = load_data(r1 + ", питание и план тренировок")
+    if r2:
+        st.write(r2)
