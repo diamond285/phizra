@@ -16,11 +16,12 @@ st.header("Рекомендации AI для набора массы")
 
 height = st.number_input("Рост (см)", value=170)
 weight = st.number_input("Вес (кг)", value=60)
+age = st.number_input("Возраст", value=20)
 gender = st.selectbox("Пол", ['Мужчина', 'Женщина'])
 
 btn = st.button("Отправить")
 if btn:
-    query = f"Как можно похудеть или набрать массуы при весе {weight} кг и при росте {height} см {gender}, питание и план тренировок"
+    query = f"Как можно похудеть или набрать массуы при весе {weight} кг и при росте {height} см {gender} {age} лет, питание и план тренировок"
 
     r1 = load_data(query)
     if r1:
