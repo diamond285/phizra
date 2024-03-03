@@ -26,6 +26,10 @@ if btn:
     r1 = load_data(query)
     if r1:
         st.write(r1)
-    r2 = load_data(r1 + ", питание и план тренировок")
+    r2 = load_data(r1 + "\nРаспиши план тренировок")
     if r2:
         st.write(r2)
+    r3 = load_data(r1 + "\nРаспиши план питания")
+    if r3:
+        st.write(r3)
+
