@@ -21,17 +21,13 @@ gender = st.selectbox("Пол", ['Мужчина', 'Женщина'])
 
 btn = st.button("Отправить")
 if gender == "Мужчина":
-    if age < 10:
-        gender = "Мальчиre"
-    elif age < 16:
-        gender = "Парен."
+    if age < 16:
+        gender = "Мальчику"
     else:
         gender = "Мужчине"
 if gender == "Женщина":
-    if age < 10:
+    if age < 16:
         gender = "Девочке"
-    elif age < 16:
-        gender = "Девушке"
     else:
         gender = "Женщине"
 if btn:
