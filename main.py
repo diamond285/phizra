@@ -21,8 +21,9 @@ gender = st.selectbox("Пол", ['Мужчина', 'Женщина'])
 
 btn = st.button("Отправить")
 if btn:
-    query = f"Рекоммендации при весе {weight} кг и при росте {height} см {gender} {age} лет, питание и план тренировок"
+    query = f"Напиши у меня лишний вес или недостаток веса при весе {weight} кг и при росте {height} см {gender} {age} лет"
 
     r1 = load_data(query)
+    r1 = load_data(r1 + ", питание и план тренировок")
     if r1:
         st.write(r1)
