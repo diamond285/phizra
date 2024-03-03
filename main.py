@@ -20,6 +20,20 @@ age = st.number_input("Возраст", value=20)
 gender = st.selectbox("Пол", ['Мужчина', 'Женщина'])
 
 btn = st.button("Отправить")
+if gender == "Мужчина":
+    if age < 10:
+        gender = "Мальчиre"
+    elif age < 16:
+        gender = "Парен."
+    else:
+        gender = "Мужчине"
+if gender == "Женщина":
+    if age < 10:
+        gender = "Девочке"
+    elif age < 16:
+        gender = "Девушке"
+    else:
+        gender = "Женщине"
 if btn:
     query = f"Напиши у меня лишний вес или недостаток веса при весе {weight} кг и при росте {height} см {gender} {age} лет"
 
