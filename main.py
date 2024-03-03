@@ -4,7 +4,7 @@ import streamlit as st
 def load_data(value):
 
     import google.generativeai as genai
-    API_KEY = 'AIzaSyDN8avHb3uwrEhIOtPj7PhkXlpUNeAdsh8'
+    API_KEY = 'AIzaSyBVCi6C7WYXB39p-6xUaZDnjlULaE6LS6E'
     genai.configure(api_key=API_KEY)
     model = genai.GenerativeModel('gemini-pro')
     chat = model.start_chat(history=[])
