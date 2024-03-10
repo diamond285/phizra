@@ -9,11 +9,12 @@ def load_data(value):
     model = genai.GenerativeModel('gemini-pro')
     chat = model.start_chat(history=[])
     q1 = value
-    try:
-        r1 = chat.send_message(q1)
-        break
-    except:
-        pass
+    while:
+        try:
+            r1 = chat.send_message(q1)
+            break
+        except:
+            pass
     return r1.text
 
 st.header("Рекомендации AI для набора массы")
