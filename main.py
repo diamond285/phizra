@@ -28,12 +28,12 @@ if gender == "Мужчина":
     if age < 16:
         gender = "Мальчику"
     else:
-        gender = "Мужчине"
+        gender = "Парню"
 if gender == "Женщина":
     if age < 16:
         gender = "Девочке"
     else:
-        gender = "Женщине"
+        gender = "Девушке"
 if btn:
     query = f"Напиши у меня лишний вес или недостаток веса при весе {weight} кг и при росте {height} см {gender} {age} лет"
 
