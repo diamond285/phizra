@@ -9,7 +9,7 @@ def load_data(value):
     model = genai.GenerativeModel('gemini-pro')
     chat = model.start_chat(history=[])
     q1 = value
-    while:
+    while True:
         try:
             r1 = chat.send_message(q1)
             break
