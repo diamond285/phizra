@@ -33,13 +33,28 @@ if gender == "Женщина":
 if btn:
     query = f"Напиши у меня лишний вес или недостаток веса при весе {weight} кг и при росте {height} см {gender} {age} лет"
 
-    r1 = load_data(query)
+    while True:
+        try:
+            r1 = load_data(query)
+            continue
+        except:
+            pass
     if r1:
         st.write(r1)
-    r2 = load_data(r1 + f"\nСоздай план тренировок {gender} {age} лет")
+    while True:
+        try:
+            r2 = load_data(r1 + f"\nСоздай план тренировок {gender} {age} лет")
+            continue
+        except:
+            pass
     if r2:
         st.write(r2)
-    r3 = load_data(r1 + f"\nСоздай план питания {gender} {age} лет")
+    while True:
+        try:
+            r3 = load_data(r1 + f"\nСоздай план питания {gender} {age} лет")
+            continue
+        except:
+            pass
     if r3:
         st.write(r3)
 
