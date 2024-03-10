@@ -47,7 +47,7 @@ if btn:
         st.write(r1)
     while True:
         try:
-            r2 = load_data(r1 + f"\nСоздай план тренировок {gender} {age} лет")
+            r2 = load_data(r1 + f"\nСоздай ПОДРОБНЫЙ план тренировок {gender} {age} лет")
             continue
         except:
             pass
