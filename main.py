@@ -11,7 +11,7 @@ def load_data(value):
     q1 = value
     try:
         r1 = chat.send_message(q1)
-        continue
+        break
     except:
         pass
     return r1.text
@@ -40,7 +40,7 @@ if btn:
     while True:
         try:
             r1 = load_data(query)
-            continue
+            break
         except:
             pass
     if r1:
@@ -48,7 +48,7 @@ if btn:
     while True:
         try:
             r2 = load_data(r1 + f"\nСоздай ПОДРОБНЫЙ план тренировок {gender} {age} лет")
-            continue
+            break
         except:
             pass
     if r2:
@@ -56,7 +56,7 @@ if btn:
     while True:
         try:
             r3 = load_data(r1 + f"\nСоздай план питания {gender} {age} лет")
-            continue
+            break
         except:
             pass
     if r3:
